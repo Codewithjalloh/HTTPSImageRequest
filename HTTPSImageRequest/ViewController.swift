@@ -9,10 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var imageView: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        let url = NSURL(string: "https://upload.wikimedia.org/wikipedia/commons/4/44/Balotelli_wears_the_2014_Italy_Home_Kit_02_(cropped).jpg")
+        
     }
 
     override func didReceiveMemoryWarning() {
