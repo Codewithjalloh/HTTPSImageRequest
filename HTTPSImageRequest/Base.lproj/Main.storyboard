@@ -17,11 +17,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="atn-OU-jgH">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="atn-OU-jgH">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="atn-OU-jgH" secondAttribute="trailing" id="RBv-wA-vCs"/>
+                            <constraint firstItem="atn-OU-jgH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="dF2-PI-YIe"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="atn-OU-jgH" secondAttribute="bottom" id="lgT-tu-ZL5"/>
+                            <constraint firstItem="atn-OU-jgH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qaO-dd-kcR"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="atn-OU-jgH" id="YTT-oK-Pu6"/>

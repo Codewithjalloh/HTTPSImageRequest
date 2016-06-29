@@ -18,7 +18,16 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         
-        let url = NSURL(string: "https://upload.wikimedia.org/wikipedia/commons/4/44/Balotelli_wears_the_2014_Italy_Home_Kit_02_(cropped).jpg")
+        let url = NSURL(string: "https://upload.wikimedia.org/wikipedia/commons/4/44/Balotelli_wears_the_2014_Italy_Home_Kit_02_(cropped).jpg")!
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
+            
+            if error == nil {
+                let downloadImage = UIImage(data: data!)
+                self.imageView.image = downloadImage
+            }
+        }
+        
+        task.resume()
         
     }
 
